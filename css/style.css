@@ -857,6 +857,10 @@ p {
     color: var(--color-white);
 }
 
+.trust__text p {
+    color: var(--color-white);
+}
+
 .trust__logos {
     flex: 1;
 }
@@ -888,6 +892,33 @@ p {
 
 .footer__logo img {
     width: 100%;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Ensure all text on dark backgrounds is white */
+.trust p,
+.trust .trust__text p,
+.team p,
+.footer p,
+.page-banner p {
+    color: var(--color-white);
+}
+
+/* Footer links visibility */
+.footer__links a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__links a:hover {
+    color: var(--color-white);
+}
+
+/* CTA sections on dark bg */
+.trust .trust__text,
+.trust .trust__text * {
+    color: var(--color-white);
 }
 
 .footer__title {
